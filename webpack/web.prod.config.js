@@ -66,9 +66,7 @@ module.exports = {
       'process.env': {
         // Useful to reduce the size of client-side libraries, e.g. react
         NODE_ENV: JSON.stringify('production'),
-        PLATFORM_ENV: JSON.stringify('web'),
-        YT_API_KEY: JSON.stringify('<YOUR_API_KEY>'),
-        YT_RESULTS_LIMIT: 50
+        PLATFORM_ENV: JSON.stringify('web')
       },
     }),
     // optimizations
