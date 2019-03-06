@@ -67,7 +67,7 @@ module.exports = {
       'process.env': {
         NODE_ENV: JSON.stringify('development'),
         PLATFORM_ENV: JSON.stringify('web'),
-        YT_API_KEY: JSON.stringify('AIzaSyBv6-goENZ9l5ctc7ZhumoiZhpEjDZYX0I'),
+        YT_API_KEY: JSON.stringify('<YOUR_API_KEY>'),
         YT_RESULTS_LIMIT: 30
       },
     }),

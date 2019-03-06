@@ -41,6 +41,22 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: ['es2015', 'react', 'stage-0'],
+          plugins: [
+            [
+              'transform-decorators-legacy',
+              'react-transform',
+              {
+                transforms: [
+                  {
+                    transform: 'react-transform-hmr',
+                    imports: ['react'],
+                    // this is important for Webpack HMR:
+                    locals: ['module'],
+                  },
+                ],
+              },
+            ],
+          ],
         },
       },
     ],
@@ -51,7 +67,7 @@ module.exports = {
         // Useful to reduce the size of client-side libraries, e.g. react
         NODE_ENV: JSON.stringify('production'),
         PLATFORM_ENV: JSON.stringify('web'),
-        YT_API_KEY: JSON.stringify('AIzaSyBv6-goENZ9l5ctc7ZhumoiZhpEjDZYX0I'),
+        YT_API_KEY: JSON.stringify('<YOUR_API_KEY>'),
         YT_RESULTS_LIMIT: 50
       },
     }),
