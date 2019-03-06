@@ -9,7 +9,7 @@ import { getSearchResults } from './../../../services/youtubeService';
 import Loading from './../shared/Loading';
 import SearchBar from './../shared/SearchBar';
 import VideoCard from './../shared/VideoCard';
-import queryString from 'queryString';
+import queryString from 'query-string';
 
 @reactn
 class Search extends React.Component {
