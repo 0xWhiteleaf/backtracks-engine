@@ -66,7 +66,9 @@ module.exports = {
       'process.env': {
         // Useful to reduce the size of client-side libraries, e.g. react
         NODE_ENV: JSON.stringify('production'),
-        PLATFORM_ENV: JSON.stringify('web')
+        PLATFORM_ENV: JSON.stringify('web'),
+        YT_API_KEY: JSON.stringify('AIzaSyBO1IHKz-LDl7qHrGCoAp8K_M_Q6DP2GMo'), // Replace it with your own Youtube Data API V3 key... 
+        YT_RESULTS_LIMIT: 50
       },
     }),
     // optimizations
